@@ -3,9 +3,10 @@ package com.zpj.emoji;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.DrawableRes;
 import android.view.Gravity;
 import android.widget.ImageView;
+
+import androidx.annotation.DrawableRes;
 
 import net.lucode.hackware.magicindicator.buildins.UIUtil;
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.CommonPagerTitleView;

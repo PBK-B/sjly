@@ -1,11 +1,12 @@
 package com.zpj.shouji.market.ui.widget.flowlayout;
 
 import android.graphics.Rect;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;

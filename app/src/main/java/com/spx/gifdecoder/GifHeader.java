@@ -2,7 +2,8 @@ package com.spx.gifdecoder;
 
 
 
-import android.support.annotation.ColorInt;
+
+import androidx.annotation.ColorInt;
 
 import com.bumptech.glide.gifdecoder.GifDecoder;
 

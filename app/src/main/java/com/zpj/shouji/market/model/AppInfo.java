@@ -2,7 +2,8 @@ package com.zpj.shouji.market.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.Keep;
+
+import androidx.annotation.Keep;
 
 import com.geek.banner.loader.BannerEntry;
 import com.zpj.http.parser.html.nodes.Element;

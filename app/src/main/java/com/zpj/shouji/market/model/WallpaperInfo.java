@@ -1,6 +1,6 @@
 package com.zpj.shouji.market.model;
 
-import android.support.annotation.Keep;
+import androidx.annotation.Keep;
 import android.text.TextUtils;
 
 import com.zpj.http.parser.html.nodes.Element;

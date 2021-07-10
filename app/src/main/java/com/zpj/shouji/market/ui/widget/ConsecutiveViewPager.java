@@ -1,8 +1,8 @@
 //package com.zpj.shouji.market.ui.widget;
 //
 //import android.content.Context;
-//import android.support.annotation.NonNull;
-//import android.support.annotation.Nullable;
+//import androidx.annotation.NonNull;
+//import androidx.annotation.Nullable;
 //import android.support.v4.view.ViewCompat;
 //import android.support.v4.view.ViewPager;
 //import android.util.AttributeSet;

@@ -1,15 +1,15 @@
 package com.zpj.shouji.market.ui.widget.indicator;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v4.view.ViewPager;
+
 import android.text.TextUtils;
 import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.viewpager.widget.ViewPager;
 
 import com.zpj.rxbus.RxBus;
 import com.zpj.shouji.market.R;
@@ -98,7 +98,7 @@ public class ExpandablePagerTitle extends CommonPagerTitleView {
         });
     }
 
-    public void init(ViewPager viewPager, int index, boolean isMe, String...items) {
+    public void init(ViewPager viewPager, int index, boolean isMe, String... items) {
         init(viewPager, index, isMe, Arrays.asList(items));
     }
 

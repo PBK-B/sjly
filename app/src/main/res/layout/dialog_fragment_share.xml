@@ -14,7 +14,7 @@
         app:dialog_header_title="分享内容至"
         />
 
-    <android.support.v7.widget.GridLayout
+    <androidx.gridlayout.widget.GridLayout
         android:id="@+id/grid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,6 +72,6 @@
             android:textSize="12sp"
             />
 
-    </android.support.v7.widget.GridLayout>
+    </androidx.gridlayout.widget.GridLayout>
 
 </LinearLayout>

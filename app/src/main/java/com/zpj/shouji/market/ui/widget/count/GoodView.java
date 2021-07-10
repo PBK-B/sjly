@@ -2,8 +2,9 @@ package com.zpj.shouji.market.ui.widget.count;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+
+import androidx.annotation.Nullable;
 
 import com.zpj.shouji.market.R;
 

@@ -1,28 +1,21 @@
 package com.zpj.shouji.market.ui.fragment.profile;
 
-import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.zpj.downloader.BaseMission;
-import com.zpj.downloader.DownloadManager;
-import com.zpj.downloader.ZDownloader;
 import com.zpj.http.parser.html.nodes.Element;
 import com.zpj.recyclerview.EasyViewHolder;
 import com.zpj.shouji.market.R;
 import com.zpj.shouji.market.api.HttpApi;
 import com.zpj.shouji.market.constant.Keys;
 import com.zpj.shouji.market.constant.UpdateFlagAction;
-import com.zpj.shouji.market.manager.AppUpdateManager;
 import com.zpj.shouji.market.manager.UserManager;
-import com.zpj.shouji.market.model.AppUpdateInfo;
-import com.zpj.shouji.market.model.IgnoredUpdateInfo;
 import com.zpj.shouji.market.model.MessageInfo;
 import com.zpj.shouji.market.model.PrivateLetterInfo;
 import com.zpj.shouji.market.ui.adapter.FragmentsPagerAdapter;
@@ -31,10 +24,8 @@ import com.zpj.shouji.market.ui.fragment.base.NextUrlFragment;
 import com.zpj.shouji.market.ui.fragment.chat.ChatFragment;
 import com.zpj.shouji.market.ui.fragment.theme.ThemeListFragment;
 import com.zpj.shouji.market.ui.widget.indicator.BadgePagerTitle;
-import com.zpj.shouji.market.ui.widget.indicator.SubTitlePagerTitle;
 import com.zpj.shouji.market.utils.BeanUtils;
 import com.zpj.shouji.market.utils.MagicIndicatorHelper;
-import com.zpj.skin.SkinEngine;
 
 import net.lucode.hackware.magicindicator.MagicIndicator;
 

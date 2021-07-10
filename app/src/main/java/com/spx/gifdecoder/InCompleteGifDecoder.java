@@ -27,10 +27,12 @@ package com.spx.gifdecoder;
 
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
-import android.support.annotation.ColorInt;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+
 import android.util.Log;
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.bumptech.glide.gifdecoder.GifDecoder;
 
@@ -57,7 +59,9 @@ import static com.spx.gifdecoder.GifFrame.DISPOSAL_UNSPECIFIED;
 public class InCompleteGifDecoder implements GifDecoder {
     private static final String TAG = "InCompleteGifDecoder";
 
-    /** Maximum pixel stack size for decoding LZW compressed data. */
+    /**
+     * Maximum pixel stack size for decoding LZW compressed data.
+     */
     private static final int MAX_STACK_SIZE = 4 * 1024;
 
     private static final int NULL_CODE = -1;
@@ -78,14 +82,20 @@ public class InCompleteGifDecoder implements GifDecoder {
      */
     @ColorInt
     private int[] act;
-    /** Private color table that can be modified if needed. */
+    /**
+     * Private color table that can be modified if needed.
+     */
     @ColorInt
     private final int[] pct = new int[256];
 
-    /** Raw GIF data from input source. */
+    /**
+     * Raw GIF data from input source.
+     */
     private ByteBuffer rawData;
 
-    /** Raw data read working array. */
+    /**
+     * Raw data read working array.
+     */
     private byte[] block;
 
     private static final int WORK_BUFFER_SIZE = 16 * 1024;
@@ -93,7 +103,8 @@ public class InCompleteGifDecoder implements GifDecoder {
      * Temporary buffer for block reading.
      * Reads 16k chunks from the native buffer for processing, to greatly reduce JNI overhead.
      */
-    @Nullable private byte[] workBuffer;
+    @Nullable
+    private byte[] workBuffer;
     private int workBufferSize = 0;
     private int workBufferPosition = 0;
 

@@ -1,7 +1,7 @@
 package com.zpj.shouji.market.ui.fragment.collection;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import com.zpj.shouji.market.constant.Keys;
 import com.zpj.shouji.market.ui.fragment.theme.ThemeListFragment;

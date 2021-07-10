@@ -124,7 +124,7 @@ import android.os.Build;
 import com.zpj.notification.builder.BaseBuilder;
 import com.zpj.notification.builder.ProgressBuilder;
 
-import static android.support.v4.app.NotificationCompat.VISIBILITY_SECRET;
+import static androidx.core.app.NotificationCompat.VISIBILITY_SECRET;
 
 /**
  * Created by Administrator on 2017/2/13 0013.

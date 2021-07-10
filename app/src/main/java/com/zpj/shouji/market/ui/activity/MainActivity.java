@@ -7,8 +7,8 @@ import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 
@@ -118,7 +118,7 @@ public class MainActivity extends BaseActivity { // implements IUiListener
 
         AppUpdateManager.getInstance().checkUpdate(MainActivity.this);
 
-//        AppInstalledManager.getInstance().loadApps(this);
+        AppInstalledManager.getInstance().loadApps();
 
 
 

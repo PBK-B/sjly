@@ -2,9 +2,10 @@ package com.zpj.shouji.market.download;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.annotation.Keep;
 import android.text.TextUtils;
 import android.util.Log;
+
+import androidx.annotation.Keep;
 
 import com.zpj.downloader.BaseMission;
 import com.zpj.downloader.DownloadMission;

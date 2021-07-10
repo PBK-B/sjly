@@ -1,11 +1,12 @@
 package com.zpj.widget.editor;
 
 import android.content.Context;
-import android.support.v7.widget.AppCompatEditText;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnFocusChangeListener;
+
+import androidx.appcompat.widget.AppCompatEditText;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

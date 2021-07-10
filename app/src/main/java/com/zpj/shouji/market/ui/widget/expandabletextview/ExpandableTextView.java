@@ -9,9 +9,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.AppCompatTextView;
 import android.text.DynamicLayout;
 import android.text.Layout;
 import android.text.Selection;
@@ -31,6 +28,10 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatTextView;
+
 import com.zpj.shouji.market.R;
 import com.zpj.shouji.market.ui.widget.expandabletextview.app.LinkType;
 import com.zpj.shouji.market.ui.widget.expandabletextview.app.StatusType;
@@ -46,7 +47,7 @@ import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static android.support.v4.util.PatternsCompat.AUTOLINK_WEB_URL;
+import static androidx.core.util.PatternsCompat.AUTOLINK_WEB_URL;
 
 /**
  * @date: on 2018-08-24
@@ -228,7 +229,7 @@ public class ExpandableTextView extends AppCompatTextView {
         super(context, attrs, defStyleAttr);
         init(context, attrs, defStyleAttr);
         setMovementMethod(LocalLinkMovementMethod.getInstance());
-        addOnAttachStateChangeListener(new OnAttachStateChangeListener() {
+        addOnAttachStateChangeListener(new View.OnAttachStateChangeListener() {
             @Override
             public void onViewAttachedToWindow(View v) {
                 if (isAttached == false)
@@ -247,7 +248,7 @@ public class ExpandableTextView extends AppCompatTextView {
     public void setMaxLines(int maxLines) {
         super.setMaxLines(maxLines);
         if (maxLines > 0) {
-            setOnTouchListener(new OnTouchListener() {
+            setOnTouchListener(new View.OnTouchListener() {
                 @Override
                 public boolean onTouch(View v, MotionEvent event) {
                     int action = event.getAction();

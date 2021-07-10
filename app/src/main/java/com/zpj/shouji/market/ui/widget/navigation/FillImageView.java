@@ -11,11 +11,12 @@ import android.graphics.Path;
 import android.graphics.Region;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.DrawableRes;
-import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.animation.AccelerateInterpolator;
+
+import androidx.annotation.DrawableRes;
+import androidx.appcompat.widget.AppCompatImageView;
 
 import com.zpj.shouji.market.R;
 import com.zpj.skin.SkinEngine;

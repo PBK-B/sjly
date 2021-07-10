@@ -2,7 +2,7 @@ package com.zpj.shouji.market.ui.widget;
 
 import android.content.Context;
 import android.graphics.Rect;
-import android.support.v4.widget.NestedScrollView;
+import androidx.core.widget.NestedScrollView;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;

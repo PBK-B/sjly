@@ -1,8 +1,8 @@
 package com.zpj.shouji.market.ui.fragment.collection;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 
 import com.bumptech.glide.Glide;

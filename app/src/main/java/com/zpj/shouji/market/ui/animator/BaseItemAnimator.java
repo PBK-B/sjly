@@ -1,11 +1,14 @@
 package com.zpj.shouji.market.ui.animator;
 
 import android.animation.ValueAnimator;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.ViewPropertyAnimatorCompat;
-import android.support.v4.view.ViewPropertyAnimatorListener;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SimpleItemAnimator;
+
+import androidx.core.view.ViewCompat;
+import androidx.core.view.ViewPropertyAnimatorCompat;
+import androidx.core.view.ViewPropertyAnimatorListener;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.SimpleItemAnimator;
+
+
 import android.view.View;
 
 import java.util.ArrayList;
@@ -25,7 +28,7 @@ public abstract class BaseItemAnimator extends SimpleItemAnimator {
     // Constructor
     //------------------------------------------------------------
 
-    public BaseItemAnimator(RecyclerView recyclerView){
+    public BaseItemAnimator(RecyclerView recyclerView) {
         mRecyclerView = recyclerView;
     }
 
@@ -64,6 +67,7 @@ public abstract class BaseItemAnimator extends SimpleItemAnimator {
     private static class ChangeInfo {
         public RecyclerView.ViewHolder oldHolder, newHolder;
         public int fromX, fromY, toX, toY;
+
         private ChangeInfo(RecyclerView.ViewHolder oldHolder, RecyclerView.ViewHolder newHolder) {
             this.oldHolder = oldHolder;
             this.newHolder = newHolder;
@@ -248,6 +252,7 @@ public abstract class BaseItemAnimator extends SimpleItemAnimator {
             public void onAnimationStart(View view) {
                 dispatchMoveStarting(holder);
             }
+
             @Override
             public void onAnimationCancel(View view) {
                 if (deltaX != 0) {
@@ -257,6 +262,7 @@ public abstract class BaseItemAnimator extends SimpleItemAnimator {
                     ViewCompat.setTranslationY(view, 0);
                 }
             }
+
             @Override
             public void onAnimationEnd(View view) {
                 animation.setListener(null);
@@ -334,6 +340,7 @@ public abstract class BaseItemAnimator extends SimpleItemAnimator {
                 public void onAnimationStart(View view) {
                     dispatchChangeStarting(changeInfo.newHolder, false);
                 }
+
                 @Override
                 public void onAnimationEnd(View view) {
                     newViewAnimation.setListener(null);
@@ -367,6 +374,7 @@ public abstract class BaseItemAnimator extends SimpleItemAnimator {
             endChangeAnimationIfNecessary(changeInfo, changeInfo.newHolder);
         }
     }
+
     private boolean endChangeAnimationIfNecessary(ChangeInfo changeInfo, RecyclerView.ViewHolder item) {
         boolean oldItem = false;
         if (changeInfo.newHolder == item) {
@@ -597,12 +605,17 @@ public abstract class BaseItemAnimator extends SimpleItemAnimator {
 
     protected static class VpaListenerAdapter implements ViewPropertyAnimatorListener {
         @Override
-        public void onAnimationStart(View view) {}
+        public void onAnimationStart(View view) {
+        }
 
         @Override
-        public void onAnimationEnd(View view) {}
+        public void onAnimationEnd(View view) {
+        }
 
         @Override
-        public void onAnimationCancel(View view) {}
-    };
+        public void onAnimationCancel(View view) {
+        }
+    }
+
+    ;
 }

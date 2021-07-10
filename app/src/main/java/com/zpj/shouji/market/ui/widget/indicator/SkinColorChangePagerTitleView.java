@@ -2,7 +2,7 @@ package com.zpj.shouji.market.ui.widget.indicator;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 
 import com.zpj.rxbus.RxBus;
 import com.zpj.shouji.market.R;

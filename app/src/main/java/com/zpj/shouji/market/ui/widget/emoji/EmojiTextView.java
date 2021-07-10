@@ -2,10 +2,12 @@ package com.zpj.shouji.market.ui.widget.emoji;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.v7.widget.AppCompatTextView;
+
 import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
 import android.util.AttributeSet;
+
+import androidx.appcompat.widget.AppCompatTextView;
 
 import com.zpj.emoji.EmojiUtils;
 import com.zpj.shouji.market.R;

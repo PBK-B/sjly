@@ -18,9 +18,6 @@ package com.zpj.shouji.market.ui.widget;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.LinearLayoutManager;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
@@ -31,6 +28,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.annotation.DrawableRes;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.bumptech.glide.Glide;
 import com.zpj.emoji.IEmotionSelectedListener;
@@ -234,6 +235,7 @@ public class ReplyPanel extends FrameLayout
                                 .setSrcView(img, holder.getAdapterPosition())
                                 .setSrcViewUpdateListener(new ImageViewerDialogFragment.OnSrcViewUpdateListener<Item>() {
                                     private boolean isFirst = true;
+
                                     @Override
                                     public void onSrcViewUpdate(@NonNull ImageViewerDialogFragment<Item> popup, int pos) {
                                         if (!isFirst) {

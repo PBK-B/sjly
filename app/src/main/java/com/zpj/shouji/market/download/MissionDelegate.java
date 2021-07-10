@@ -1,8 +1,9 @@
 package com.zpj.shouji.market.download;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
 
 import com.zpj.downloader.BaseMission;
 import com.zpj.downloader.ZDownloader;

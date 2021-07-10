@@ -5,8 +5,8 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -14,14 +14,11 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.zpj.blur.ZBlurry;
 import com.zpj.fragmentation.ISupportFragment;
-import com.zpj.fragmentation.SupportFragment;
 import com.zpj.fragmentation.dialog.impl.FullScreenDialogFragment;
 import com.zpj.shouji.market.R;
 import com.zpj.shouji.market.constant.AppConfig;
 import com.zpj.shouji.market.model.InstalledAppInfo;
-import com.zpj.shouji.market.ui.fragment.MainFragment;
 import com.zpj.shouji.market.ui.widget.InfoCardView;
-import com.zpj.utils.AppUtils;
 import com.zpj.utils.DateUtils;
 
 public class PackageDetailDialogFragment extends FullScreenDialogFragment {

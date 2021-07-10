@@ -15,8 +15,8 @@
  */
 package com.zpj.shouji.market.imagepicker;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.zpj.shouji.market.imagepicker.entity.Item;
 import com.zpj.shouji.market.utils.EventBus;

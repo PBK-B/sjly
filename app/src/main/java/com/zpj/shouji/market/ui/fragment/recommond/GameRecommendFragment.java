@@ -1,6 +1,6 @@
 package com.zpj.shouji.market.ui.fragment.recommond;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;

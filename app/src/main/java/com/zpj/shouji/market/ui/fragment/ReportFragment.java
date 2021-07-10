@@ -2,8 +2,9 @@ package com.zpj.shouji.market.ui.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.AppCompatEditText;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatEditText;
+
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;

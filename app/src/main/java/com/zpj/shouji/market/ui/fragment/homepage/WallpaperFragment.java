@@ -2,8 +2,8 @@ package com.zpj.shouji.market.ui.fragment.homepage;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewPager;
+import androidx.annotation.Nullable;
+import androidx.viewpager.widget.ViewPager;
 import android.view.View;
 
 import com.zpj.shouji.market.R;

@@ -391,8 +391,9 @@ import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
-import android.support.v4.app.NotificationCompat;
+
+import androidx.annotation.RequiresApi;
+import androidx.core.app.NotificationCompat;
 import android.text.TextUtils;
 
 import com.zpj.notification.ZNotify;
@@ -400,8 +401,8 @@ import com.zpj.notification.ZNotify;
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.support.v4.app.NotificationCompat.PRIORITY_DEFAULT;
-import static android.support.v4.app.NotificationCompat.VISIBILITY_SECRET;
+import static androidx.core.app.NotificationCompat.PRIORITY_DEFAULT;
+import static androidx.core.app.NotificationCompat.VISIBILITY_SECRET;
 
 /**
  * Created by Administrator on 2017/2/13 0013.

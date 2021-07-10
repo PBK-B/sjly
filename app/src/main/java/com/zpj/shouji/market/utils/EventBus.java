@@ -1,7 +1,9 @@
 package com.zpj.shouji.market.utils;
 
-import android.arch.lifecycle.LifecycleOwner;
+
 import android.view.View;
+
+import androidx.lifecycle.LifecycleOwner;
 
 import com.zpj.fragmentation.dialog.IDialog;
 import com.zpj.rxbus.RxBus;

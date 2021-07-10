@@ -2,8 +2,10 @@ package com.zpj.shouji.market.ui.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.annotation.IntDef;
-import android.support.v7.widget.AppCompatImageView;
+
+import androidx.annotation.IntDef;
+import androidx.appcompat.widget.AppCompatImageView;
+
 import android.util.AttributeSet;
 
 import com.zpj.shouji.market.R;
@@ -46,7 +48,7 @@ public class PercentImageView extends AppCompatImageView {
     }
 
     public void setBasics(int basics) {
-        if (mBasics == basics){
+        if (mBasics == basics) {
             return;
         }
         mBasics = basics;
@@ -54,7 +56,7 @@ public class PercentImageView extends AppCompatImageView {
     }
 
     public void setPercent(float percent) {
-        if (mPercent == percent){
+        if (mPercent == percent) {
             return;
         }
         mPercent = percent;
@@ -62,7 +64,7 @@ public class PercentImageView extends AppCompatImageView {
     }
 
     public void setPercent(@Basics int basics, float percent) {
-        if (mBasics == basics && mPercent == percent){
+        if (mBasics == basics && mPercent == percent) {
             return;
         }
         mBasics = basics;
@@ -78,17 +80,17 @@ public class PercentImageView extends AppCompatImageView {
         setMeasuredDimension(size[0], size[1]);
     }
 
-    private int[] calculateNewSize(){
+    private int[] calculateNewSize() {
         int[] size = new int[]{mWidthMeasureSize, mHeightMeasureSize};
-        if (mBasics == BASICS_WIDTH){
+        if (mBasics == BASICS_WIDTH) {
             size[1] = (int) (mWidthMeasureSize * mPercent);
-        } else if (mBasics == BASICS_HEIGHT){
+        } else if (mBasics == BASICS_HEIGHT) {
             size[0] = (int) (mHeightMeasureSize * mPercent);
         }
         return size;
     }
 
-    private void resetNewSize(){
+    private void resetNewSize() {
         int[] size = calculateNewSize();
         getLayoutParams().width = size[0];
         getLayoutParams().height = size[1];

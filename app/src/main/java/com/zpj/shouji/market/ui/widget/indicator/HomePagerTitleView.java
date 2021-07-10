@@ -2,11 +2,10 @@ package com.zpj.shouji.market.ui.widget.indicator;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.annotation.DrawableRes;
-import android.support.v4.content.ContextCompat;
+
+import androidx.annotation.DrawableRes;
+import androidx.core.content.ContextCompat;
 import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 

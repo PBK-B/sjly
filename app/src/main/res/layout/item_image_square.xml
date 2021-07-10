@@ -15,7 +15,7 @@
         app:hl_shadowColor="#80cccccc"
         >
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:cardCornerRadius="8dp"
@@ -30,7 +30,7 @@
                 android:scaleType="centerCrop"
                 />
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
 
 
